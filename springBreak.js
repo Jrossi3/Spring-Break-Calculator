@@ -1,5 +1,5 @@
 const checkpoint = 300;
-const checkpoint1 = 600;
+const checkpoint1 = 450;
 
 window.addEventListener("scroll", () => {
     const currentScroll = window.pageYOffset;
