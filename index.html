@@ -1,0 +1,73 @@
+<!DOCTYPE html><html>
+    <head>
+        <meta charset = "UTF-8"/>
+        <meta name = "viewport" 
+        content="width=device-width, initial-scale=1.0"/>
+        <title>
+        </title>
+        <link rel="stylesheet" href="style.css"/>
+        <script src = "springBreak.js" defer></script> 
+        <script src = "animation.js" defer></script> 
+    </head>
+    <body> 
+        <div class="img-wrapper">
+                <div style="background-image: url(IceSkating.JPG);"></div>
+                <div class="front" style="background-image: url(TheQuad.jpg);"></div>
+            <div class = "content show-on-scroll">
+                <div class = "header show-on-scroll">
+                    <h1 class="heading" font-size = "10px">It's important to have as much fun as possible while we're here.
+                        It balances out the times when the minefield of life explodes. - Jimmy Buffet
+                    </h1>
+                </div>
+                
+                <div class = "surveyBox">
+                    <!-- <button onclick = hotelCalculator()>Start Calculator</button> -->
+                    <form>
+                        How many nights are you staying? Enter just an integer, i.e '3' would be 3 nights
+                        <br>
+                        <input type = "text" id = ""><br>
+                        How much will each night cost? Put just a number in, no $.
+                        <br>
+                        <input type = "text" id = ""><br>
+                        How many drinks does it take you to get drunk? Enter just an integer, i.e '3' would be 3 drinks.
+                        <br>
+                        <button onclick=showResults()>Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="img-wrapper">
+                <div style="background-image: url(Leyla\'sBirthday.JPG);"></div>
+                <div class="front1" style="background-image: url(IceSkating.JPG);"></div>
+                <div class = "content show-on-scroll">
+                    <div class = "surveyBox">
+                        <!-- <button onclick = hotelCalculator()>Start Calculator</button> -->
+                        <div class = "surveyBox1">
+                            <form>
+                                What is the cost of your first oneWay ticket? Put just a number in, no $.
+                                <br>
+                                <input type = "text" id = ""><br>
+                                What is the cost of your second oneWay ticket? Put just a number in, no $.
+                                <br>
+                                <input type = "text" id = ""><br>
+                                What is the cost of your round trip ticket? Put just a number in, no $.
+                                <br>
+                                <input type = "text" id = ""><br>
+                                Is your flight round trip or 2 one way trips? Respond with 'round trip' or 'one way'
+                                <br>
+                                <input type = "text" id = ""><br>
+                                How many carry-ons are you bringing that cost you extra money? Put just a number in, no $.
+                                <br>
+                                <input type = "text" id = ""><br>
+                                How much is each carry-on? Put 0 if you answered 0 previously
+                                <br>
+                                <input type = "text" id = ""><br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
