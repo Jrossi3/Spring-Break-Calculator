@@ -1,4 +1,4 @@
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     body {
         margin: 0;
     }
@@ -125,7 +125,7 @@
 
 }
 
-@media (max-width: 599px) {
+@media (max-width: 799px) {
     body {
         margin: 0;
     }
@@ -184,10 +184,6 @@
         opacity: 1;
     }
 
-    p {
-        font-size: 25px;
-    }
-
     .heading {
         text-align: center;
         font-family: 'Permanent Marker', cursive;
@@ -235,7 +231,7 @@
     .surveyBox {
         border: 3px solid green;
         border-radius: 10px;
-        padding: 20px;
+        padding: 10px;
         /* text-align: center; */
         background: transparent;
         position: absolute;
