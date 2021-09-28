@@ -6,7 +6,7 @@ var totalPrice = 0;
 var numberOfNights;
 
 const checkpoint = 300;
-const checkpoint1 = 400;
+const checkpoint1 = 600;
 
 window.addEventListener("scroll", () => {
   const currentScroll = window.pageYOffset;
