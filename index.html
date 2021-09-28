@@ -25,13 +25,13 @@
                     <form>
                         How many nights are you staying? Enter just an integer, i.e '3' would be 3 nights
                         <br>
-                        <input type = "text" id = ""><br>
+                        <input type = "text" name = "nightStaying" id = "nightStaying"><br>
                         How much will each night cost? Put just a number in, no $.
                         <br>
-                        <input type = "text" id = ""><br>
+                        <input type = "text" name = "pricePerNight" id = "pricePerNight"><br>
                         How many drinks does it take you to get drunk? Enter just an integer, i.e '3' would be 3 drinks.
                         <br>
-                        <input type = "text" id = ""><br>
+                        <input type = "text" name = "totalDrinks" id = "totalDrinks"><br>
                     </form>
                 </div>
             </div>
@@ -46,14 +46,16 @@
                         <form>
                             What is the cost of your flight ticket? Put just a number in, no $.
                             <br>
-                            <input type = "text" id = ""><br>
+                            <input type = "text" name = "flightCost" id = "flightCost"><br>
                             How many carry-ons are you bringing that cost you extra money? Put just a number in, no $.
                             <br>
-                            <input type = "text" id = ""><br>
+                            <input type = "text" name = "carryOnCost" id = "carryOnCost"><br>
                             How much is each carry-on? Put 0 if you answered 0 previously
                             <br>
-                            <input type = "text" id = ""><br>
-                            <button onclick=showResults()>Submit</button>
+                            <input type = "text" name = "carryOnTotal" id = "carryOnTotal"><br>
+                            <input type = "submit" name = "button" id = "button1" onclick = "showResults()" value = "Submit"/><br><br>
+                            If you have multiple flight tickets, click here:
+                            <button onclick = hotelCalculator()>Trip Cost Calulator</button>
                         </form>
                     </div>
                 </div>

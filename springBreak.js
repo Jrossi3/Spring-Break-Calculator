@@ -1,21 +1,14 @@
-var hotelCost = 0;
-var drinkCost = 0;
-var flightCost = 0;
-var carryOnCost = 0;
-var totalPrice = 0;
-var numberOfNights;
-
 const checkpoint = 300;
 const checkpoint1 = 600;
 
 window.addEventListener("scroll", () => {
-  const currentScroll = window.pageYOffset;
-  if (currentScroll <= checkpoint) {
-    opacity = 1 - currentScroll / checkpoint;
-  } else {
-    opacity = 0;
-  }
-  document.querySelector(".front").style.opacity = opacity;
+    const currentScroll = window.pageYOffset;
+    if (currentScroll <= checkpoint) {
+        opacity = 1 - currentScroll / checkpoint;
+    } else {
+        opacity = 0;
+    }
+    document.querySelector(".front").style.opacity = opacity;
 });
 
 window.addEventListener("scroll", () => {
@@ -26,16 +19,35 @@ window.addEventListener("scroll", () => {
       opacity = 0;
     }
     document.querySelector(".front1").style.opacity = opacity;
-  });
+});
 
 $(window).on('load', function() {
-
     $('button').click(function() {
-  
-      if ($(this).index() == 0) $('.content').toggleClass('fadefirst');
-      else $('.content').toggleClass('fadesecond');
+        if ($(this).index() == 0) $('.content').toggleClass('fadefirst');
+        else $('.content').toggleClass('fadesecond');
     });
-  });
+});
+
+function showResults() {
+    var totalNights = document.getElementById("nightStaying").value;
+    var pricePerNight = document.getElementById("pricePerNight").value;
+    var totalDrinks = document.getElementById("totalDrinks").value;
+    var flightCost1 = document.getElementById("flightCost").value;
+    var carryOnCost1 = document.getElementById("carryOnCost").value;
+    var carryOnTotal = document.getElementById("carryOnTotal").value;
+    var totalPriceOfTrip = 400 + parseFloat(totalNights) * parseFloat(pricePerNight) + parseFloat(totalDrinks) * 8 * (parseFloat(totalNights)-1) + parseFloat(flightCost1) + parseFloat(carryOnCost1) * parseFloat(carryOnTotal);
+    console.log(parseFloat(totalNights));
+    alert("Your trip will cost $" + totalPriceOfTrip + "!");
+}
+
+//Break
+
+var hotelCost = 0;
+var drinkCost = 0;
+var flightCost = 0;
+var carryOnCost = 0;
+var totalPrice = 0;
+var numberOfNights;
 
 function hotelCalculator() {
     numberOfNights = prompt("How many nights are you staying? Enter just an integer, i.e '3' would be 3 nights");
@@ -91,11 +103,6 @@ function flightCalculator() {
     else if (flight == "round trip") {
         flightCalculatorHelperRound();
     }
-    // else {
-    //     alert("Try again");
-    //     flightCalculator();
-    // }
-    
 }
 
 function carryOnCalculator() {
