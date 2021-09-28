@@ -1,4 +1,4 @@
-@media (min-width: 800px) {
+@media (min-width: 600px) {
     body {
         margin: 0;
     }
@@ -125,7 +125,7 @@
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 599px) {
     body {
         margin: 0;
     }
@@ -192,6 +192,7 @@
         text-align: center;
         font-family: 'Permanent Marker', cursive;
         font-weight: bold;
+        font-size: 25px;
         color: yellow;
     }
 
