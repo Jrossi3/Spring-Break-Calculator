@@ -35,7 +35,7 @@ function showResults() {
     var flightCost1 = document.getElementById("flightCost").value;
     var carryOnCost1 = document.getElementById("carryOnCost").value;
     var carryOnTotal = document.getElementById("carryOnTotal").value;
-    var totalPriceOfTrip = 400 + parseFloat(totalNights) * parseFloat(pricePerNight) + parseFloat(totalDrinks) * 8 * (parseFloat(totalNights)-1) + parseFloat(flightCost1) + parseFloat(carryOnCost1) * parseFloat(carryOnTotal);
+    var totalPriceOfTrip = 80 * parseFloat(totalNights - 1) + parseFloat(totalNights) * parseFloat(pricePerNight) + parseFloat(totalDrinks) * 8 * (parseFloat(totalNights)-1) + parseFloat(flightCost1) + parseFloat(carryOnCost1) * parseFloat(carryOnTotal);
     console.log(parseFloat(totalNights));
     alert("Your trip will cost $" + totalPriceOfTrip + "!");
 }
